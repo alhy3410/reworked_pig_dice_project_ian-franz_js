@@ -100,7 +100,5 @@ $(function() {
       $(".player1-scored1").hide();
       }
     });
-
-
   });
 });
