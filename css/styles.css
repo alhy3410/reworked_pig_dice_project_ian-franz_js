@@ -10,6 +10,22 @@
   border-right: 2px solid #A8A8A8;
 }
 
+#player2info{
+  display:none;
+}
+
+#computerinfo{
+  display:none;
+}
+
+.computer-scored1{
+  display:none;
+}
+
+#computer_rolls{
+  display:none;
+  float:right;
+}
 .col2 {
   width: 50%;
   text-align: center;
@@ -29,11 +45,19 @@
   display: none;
 }
 
+.computer{
+  display:none;
+}
+
 .player1-victory {
   display: none;
 }
 
 .player2-victory {
+  display: none;
+}
+
+.computer-victory {
   display: none;
 }
 
@@ -77,4 +101,23 @@
   background-color: green;
   color: white;
   width: 100%;
+}
+
+#computer{
+  cursor: pointer;
+  color: #0088cc;
+  width: 100%;
+  padding: 10px 10px;
+}
+
+#computer hover{
+  text-decoration: underline;
+}
+
+#create-player{
+  display:none;
+}
+
+#create-player-computer{
+  display:none;
 }

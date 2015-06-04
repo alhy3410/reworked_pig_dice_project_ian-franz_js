@@ -25,6 +25,18 @@
               <input type="text" class="form-control" id="player2-name">
             </div>
             <button type="submit" class="button">Begin game</button>
+            <h4 id='computer'>Or Play Against a Computer</h4>
+          </form>
+        </div>
+
+        <div class="new-player-computer">
+          <br>
+          <form id="create-player-computer">
+            <div class="form-group">
+              <label for="player-name">Enter your name</label>
+              <input type="text" class="form-control" id="player-name">
+            </div>
+            <button type="submit" class="button">Begin game</button>
           </form>
         </div>
       </div>
@@ -49,7 +61,7 @@
         </div>
 
 
-        <div class="col2">
+        <div id='player2info' class="col2">
           <h4>Player: <span class="player2-name"></span></h4>
           <h5>Total Score: <span class="player2-total-score"></span></h5>
           <div class="player2">
@@ -65,6 +77,24 @@
         <div class="player2-scored1">
           <h2>You rolled a 1. Your turn is over.</h2>
         </div>
+
+        <div id='computerinfo' class="col2">
+          <h4>Player: <span class="computer-name"></span></h4>
+          <h5>Total Score: <span class="computer-total-score"></span></h5>
+          <div class="computer">
+            <h5>Your roll: <span class="computer-rolled-number"></span></h5>
+            <ul id='computerRolledNumbers'>
+
+            </ul>  
+            <h5>Turn Score: <span class="computer-turn-score"></span></h5>
+            <button id='computer_rolls' type="submit" class="button">Let the Computer Start</button>
+          </div>
+
+        </div>
+        <div class="computer-scored1">
+          <h2>The Computer rolled a 1. It's turn is over.</h2>
+        </div>
+
       </div>
 
       <div class="player1-victory">
@@ -73,7 +103,9 @@
       <div class="player2-victory">
         <h1>PLAYER 2 WINS!!!</h1>
       </div>
-
+      <div class="computer-victory">
+        <h1>COMPUTER WINS!!!</h1>
+      </div>
 
 
     </div>
